@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/drop_down_ic.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/drawable/round_pop_background.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22395833333333334" />
       </map>
