@@ -74,7 +74,12 @@ class MainActivity : AppCompatActivity() {
         popupWindow.height = WindowManager.LayoutParams.WRAP_CONTENT
 
         // set background for pop window
-        popupWindow.setBackgroundDrawable(AppCompatResources.getDrawable(applicationContext,R.drawable.round_pop_background))
+        popupWindow.setBackgroundDrawable(
+            AppCompatResources.getDrawable(
+                applicationContext,
+                R.drawable.round_pop_background
+            )
+        )
 
 
         // set the list view as pop up window content
