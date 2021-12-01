@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var tvSelectContent: TextView
     val customSpinnerList = ArrayList<String>()
-    var popupWindowDogs: PopupWindow? = null
+    var popupWindow: PopupWindow? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,10 +32,10 @@ class MainActivity : AppCompatActivity() {
         customSpinnerList.add("Honda CBR1000RR")
 
         // initialize pop up window once items are added in the array
-        popupWindowDogs = popupWindowDogs()
+        popupWindow = popupWindowDogs()
 
         tvSelectContent.setOnClickListener { view ->
-            popupWindowDogs!!.showAsDropDown(view, -5, 0)
+            popupWindow!!.showAsDropDown(view, -5, 0)
         }
 
     }
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 v.startAnimation(fadeInAnimation)
 
                 // dismiss the pop up (close)
-                popupWindowDogs!!.dismiss()
+                this.popupWindow!!.dismiss()
 
                 // get selected text
                 tvSelectContent.text = a.getItemAtPosition(position).toString()
